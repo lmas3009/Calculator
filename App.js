@@ -167,13 +167,10 @@ export default class App extends React.Component {
       total = total.replace("^","**")
       this.setState({
         num:eval(total),
-        total:eval(total)
+        total: "Answer= "+eval(total)
       })
       display=[]
       values=[]
-      this.setState({
-        total:''
-      })
     }
   }
   renderItem = ({ item }) => {
@@ -241,7 +238,7 @@ const styles = StyleSheet.create({
   },
   textinput:{
     height: 60,
-    borderColor:'lightgrey',
+    borderColor:'white',
     borderWidth:2,
     borderRadius:5,
     marginTop: 30,
